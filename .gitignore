@@ -11,7 +11,7 @@
 *.dylib
 
 # build
-build
+/build/
 
 # Qt-es
 object_script.*.Release

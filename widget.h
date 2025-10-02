@@ -20,5 +20,8 @@ public:
 
 private:
     Ui::Widget *ui;
+    QSystemTrayIcon * icon;
+
+    void setIcon();
 };
 #endif // WIDGET_H

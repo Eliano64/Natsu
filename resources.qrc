@@ -1,3 +1,5 @@
 <RCC>
-    <qresource prefix="/resources"/>
+    <qresource prefix="/">
+        <file>asset/NatsuSystemTray.ico</file>
+    </qresource>
 </RCC>
