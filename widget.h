@@ -27,21 +27,34 @@ private:
     QLabel *canvas;
     QPixmap *natsu;
     QTimer * timer;
+    QTimer * record;
     int idx;
     int cnt;
-
-    void setIcon();
-    void setMovieInit();
-    void setType(QString);
     enum class Type{
         loading,
         idle,
         goodbye,
         exit,
+        drag,
+        drag_over,
+        clicked,
+        clicked_over,
     };
     Type t;
+    bool isDragging;
+    bool isPressed;
+    QPoint dragPosition;
+
+    void setIcon();
+    void setMovieInit();
+    //void setType(QString);
     float setRate();
-    void setMovie(QString);
+    void setMovie(QString,std::function<void()> = [](){});
+    void updateFrame();
+    void selectIdle();
+    void mouseMoveEvent(QMouseEvent *) override;
+    void mousePressEvent(QMouseEvent *) override;
+    void mouseReleaseEvent(QMouseEvent *) override;
 
 signals:
     void movieChange();

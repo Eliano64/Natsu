@@ -5,5 +5,11 @@
         <file>asset/goodbye.png</file>
         <file>asset/idle0.png</file>
         <file>asset/exit.png</file>
+        <file>asset/drag0.png</file>
+        <file>asset/drag1.png</file>
+        <file>asset/drag_over.png</file>
+        <file>asset/idle1.png</file>
+        <file>asset/clicked_over.png</file>
+        <file>asset/clicked0.png</file>
     </qresource>
 </RCC>
