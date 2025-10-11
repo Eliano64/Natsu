@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>asset/NatsuSystemTray.ico</file>
+        <file>asset/loading.png</file>
+        <file>asset/goodbye.png</file>
+        <file>asset/idle0.png</file>
+        <file>asset/exit.png</file>
     </qresource>
 </RCC>
